@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: fresh-vita-web
+    runtime: docker
+    plan: free
+    region: oregon
+    autoDeployTrigger: commit
+    healthCheckPath: /health
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
