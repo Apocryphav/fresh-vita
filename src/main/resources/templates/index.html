@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Vita | Purificadores de aire en Panama</title>
+    <meta name="description" content="Fresh Vita vende purificadores de aire, filtros, mantenimiento y accesorios con enfoque en salud respiratoria, envios en Panama y compra online segura.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="site-bg"></div>
+
+    <header class="utility-bar">
+        <p>Entrega express en Panama centro</p>
+        <div>
+            <span>Pago con Tarjeta</span>
+            <span>Yappy Banco General</span>
+            <span>Mantenimiento FreshCare</span>
+        </div>
+    </header>
+
+    <div class="page-shell">
+        <header class="topbar">
+            <a class="brand" href="#inicio">
+                <span class="brand-mark">FV</span>
+                <span>
+                    <strong>Fresh Vita</strong>
+                    <small>Mas aire, mas vida</small>
+                </span>
+            </a>
+
+            <nav class="nav">
+                <a href="#catalogo">Catalogo</a>
+                <a href="#mantenimiento">Mantenimiento</a>
+                <a href="#marca">Marca</a>
+                <a href="#compra">Compra</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+            <button class="cart-button" type="button" onclick="toggleCart(true)">
+                <span>Carrito</span>
+                <span id="cart-count" class="cart-badge">0</span>
+            </button>
+        </header>
+
+        <main>
+            <section id="inicio" class="hero">
+                <div class="hero-copy">
+                    <p class="eyebrow">Fresh Vita Panama</p>
+                    <h1>Purificadores de aire, filtros y mantenimiento para hogares, autos y oficinas.</h1>
+                    <p class="hero-text">
+                        Fresh Vita nace para responder a una necesidad real del mercado panameno: mejorar la calidad del aire con equipos accesibles, compra online simple y respaldo orientado a salud respiratoria.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="primary-link" href="#catalogo">Comprar ahora</a>
+                        <button class="secondary-link" type="button" onclick="scrollToSection('marca')">Conocer la marca</button>
+                    </div>
+
+                    <div class="hero-metrics">
+                        <article>
+                            <strong>42%</strong>
+                            <span>de residentes del area metropolitana reportan problemas respiratorios</span>
+                        </article>
+                        <article>
+                            <strong>68%</strong>
+                            <span>compraria un purificador confiable y a buen precio</span>
+                        </article>
+                        <article>
+                            <strong>89%</strong>
+                            <span>prefiere comprar este tipo de producto en linea</span>
+                        </article>
+                    </div>
+                </div>
+
+                <aside class="hero-panel">
+                    <img class="hero-art" src="/images/real/purifier-desk.jpg" alt="Purificador de aire real en un escritorio">
+                    <div class="hero-panel-top">
+                        <span class="pill">Categoria principal</span>
+                        <span class="pill muted">Envio gratis en Panama centro</span>
+                    </div>
+                    <h2>FreshVita Office Protect X</h2>
+                    <p>Purificador premium con filtro HEPA, carbon activado, sensor de particulas y modo silencioso para oficinas y espacios medianos.</p>
+                    <strong>$249.00</strong>
+                    <ul>
+                        <li>Cobertura recomendada hasta 55 m2</li>
+                        <li>Control tactil y monitoreo de calidad del aire</li>
+                        <li>Ideal para oficinas, recepciones y salas</li>
+                    </ul>
+                    <button type="button" onclick="addToCartById('office-protect-x')">Anadir al carrito</button>
+                </aside>
+            </section>
+
+            <section class="trust-strip">
+                <article>
+                    <span>Certificacion</span>
+                    <strong>MINSA</strong>
+                    <p>La propuesta Fresh Vita se presenta con enfoque en cumplimiento sanitario y documentacion orientada al mercado panameno.</p>
+                </article>
+                <article>
+                    <span>Referencia</span>
+                    <strong>OMS</strong>
+                    <p>El proyecto destaca bienestar respiratorio, calidad del aire y prevencion en espacios cerrados.</p>
+                </article>
+                <article>
+                    <span>Operacion</span>
+                    <strong>E-commerce</strong>
+                    <p>Compra online, seguimiento del pedido, soporte y programa de mantenimiento preventivo.</p>
+                </article>
+                <article>
+                    <span>Logistica</span>
+                    <strong>Panama</strong>
+                    <p>Entrega express en area metropolitana y recargo por zona segun destino solicitado.</p>
+                </article>
+            </section>
+
+            <section class="gallery-strip">
+                <article>
+                    <img src="/images/real/purifier-cylinder.jpg" alt="Purificador de aire real Fresh Vita">
+                    <div>
+                        <strong>Purificadores</strong>
+                        <p>Modelos para auto, hogar, oficina y espacios de salud.</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="/images/real/purifier-desk.jpg" alt="Purificador de aire real para hogar">
+                    <div>
+                        <strong>Filtros y repuestos</strong>
+                        <p>HEPA, carbon activado y piezas que acompanian el sistema principal.</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="/images/real/air-monitor.jpg" alt="Monitor real de calidad del aire">
+                    <div>
+                        <strong>Mantenimiento</strong>
+                        <p>Planes FreshCare por niveles con soporte y revision tecnica.</p>
+                    </div>
+                </article>
+            </section>
+
+            <section id="catalogo" class="catalog-layout">
+                <aside class="catalog-sidebar">
+                    <div class="sidebar-block">
+                        <p class="eyebrow">Explora la tienda</p>
+                        <h2>Purificadores y productos que van de la mano</h2>
+                        <p>Tomamos como referencia una categoria de compra moderna: filtros claros, fichas tecnicas breves, precios visibles y accion rapida de carrito.</p>
+                    </div>
+
+                    <div class="sidebar-block">
+                        <label class="search-input">
+                            <span>Buscar producto</span>
+                            <input id="search-input" type="search" placeholder="purificador, filtro, sensor" oninput="handleSearch(event)">
+                        </label>
+                    </div>
+
+                    <div class="sidebar-block">
+                        <span class="filter-title">Tipo de producto</span>
+                        <div class="filters">
+                            <button class="filter-chip active" type="button" data-filter="all" onclick="setFilter('all')">Todo</button>
+                            <button class="filter-chip" type="button" data-filter="purificador" onclick="setFilter('purificador')">Purificadores</button>
+                            <button class="filter-chip" type="button" data-filter="accesorio" onclick="setFilter('accesorio')">Accesorios</button>
+                            <button class="filter-chip" type="button" data-filter="mantenimiento" onclick="setFilter('mantenimiento')">Servicios</button>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-block shipping-box">
+                        <span class="filter-title">Politica de envio</span>
+                        <ul>
+                            <li>Panama centro: gratis</li>
+                            <li>Zonas cercanas: recargo automatico</li>
+                            <li>Interior y provincias especiales: se suma extra segun destino</li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <section class="catalog-main">
+                    <div class="catalog-heading">
+                        <div>
+                            <p class="eyebrow">Catalogo Fresh Vita</p>
+                            <h2>Seleccion principal de purificadores</h2>
+                        </div>
+                        <p>Precios base en dolares, comparacion simple y opcion de anadir al carrito desde cada ficha.</p>
+                    </div>
+
+                    <div id="products" class="products"></div>
+                </section>
+            </section>
+
+            <section id="mantenimiento" class="maintenance-section">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">FreshCare</p>
+                        <h2>Mantenimiento en distintos niveles de precio</h2>
+                    </div>
+                    <p>Planes pensados para quienes desean mantener el rendimiento del purificador y extender la vida util de filtros, sensores y ventilacion interna.</p>
+                </div>
+
+                <div class="maintenance-grid">
+                    <article class="plan-card">
+                        <span class="plan-tag">Basico</span>
+                        <h3>FreshCare Essential</h3>
+                        <strong>$25.00</strong>
+                        <ul>
+                            <li>Limpieza externa y chequeo general</li>
+                            <li>Revision de flujo de aire</li>
+                            <li>Diagnostico rapido del filtro</li>
+                        </ul>
+                        <button type="button" onclick="addToCartById('service-essential')">Agregar servicio</button>
+                    </article>
+
+                    <article class="plan-card featured">
+                        <span class="plan-tag">Recomendado</span>
+                        <h3>FreshCare Plus</h3>
+                        <strong>$45.00</strong>
+                        <ul>
+                            <li>Limpieza profunda interna</li>
+                            <li>Desinfeccion y calibracion de sensores</li>
+                            <li>Revision de filtro HEPA y carbon</li>
+                        </ul>
+                        <button type="button" onclick="addToCartById('service-plus')">Agregar servicio</button>
+                    </article>
+
+                    <article class="plan-card">
+                        <span class="plan-tag">Premium</span>
+                        <h3>FreshCare Total</h3>
+                        <strong>$79.00</strong>
+                        <ul>
+                            <li>Mantenimiento completo en sitio</li>
+                            <li>Cambio de filtro preinstalado</li>
+                            <li>Informe tecnico y prioridad de soporte</li>
+                        </ul>
+                        <button type="button" onclick="addToCartById('service-total')">Agregar servicio</button>
+                    </article>
+                </div>
+            </section>
+
+            <section class="benefit-grid">
+                <article>
+                    <span>Hogar</span>
+                    <h3>Ambientes familiares mas saludables</h3>
+                    <p>Equipos silenciosos para dormitorios, salas y apartamentos con enfoque en alergias, polvo y olores.</p>
+                </article>
+                <article>
+                    <span>Oficina</span>
+                    <h3>Productividad con aire limpio</h3>
+                    <p>Modelos de mayor cobertura para oficinas pequenas, consultorios y recepciones con trafico constante.</p>
+                </article>
+                <article>
+                    <span>Auto</span>
+                    <h3>Proteccion en movimiento</h3>
+                    <p>Versiones portatiles para conductores, repartidores y viajes largos dentro de la ciudad.</p>
+                </article>
+            </section>
+
+            <section id="marca" class="brand-section">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">Sobre FreshVita</p>
+                        <h2>Una marca construida sobre pureza, salud, frescura y bienestar</h2>
+                    </div>
+                </div>
+
+                <div class="brand-grid">
+                    <article class="brand-story">
+                        <h3>Nuestra propuesta</h3>
+                        <p>Fresh Vita fue concebida como una solucion moderna y ecologica para personas que desean mejorar su bienestar fisico y ambiental. La marca integra tecnologia, naturaleza y salud respiratoria bajo el eslogan <strong>"Mas aire, mas vida"</strong>.</p>
+                        <p>Segun el resumen ejecutivo del proyecto, Fresh Vita enfoca su operacion inicial en Panama y su area metropolitana, atendiendo principalmente hogares, oficinas pequenas y conductores profesionales mediante un canal 100% digital.</p>
+                    </article>
+
+                    <article class="brand-values">
+                        <h3>Mision y valores</h3>
+                        <ul>
+                            <li>Mision: ofrecer productos de purificacion de aire de alta calidad con compras seguras y rapidas.</li>
+                            <li>Vision: ser una marca lider en Latinoamerica por calidad, innovacion y compromiso con la salud respiratoria.</li>
+                            <li>Transparencia: precios claros, sin cargos ocultos.</li>
+                            <li>Calidad garantizada: productos orientados a certificaciones y cumplimiento sanitario.</li>
+                            <li>Atencion humana: soporte cercano, postventa y acompanamiento.</li>
+                        </ul>
+                    </article>
+
+                    <article class="brand-certs">
+                        <h3>Propiedades y respaldo de salud</h3>
+                        <ul>
+                            <li>Filtros HEPA y capas de carbon activado para particulas y olores.</li>
+                            <li>Modelos silenciosos para dormitorios, clinicas y oficinas.</li>
+                            <li>Enfoque de cumplimiento documentado hacia permisos y registro sanitario en Panama.</li>
+                            <li>Referencia a certificacion medica MINSA y lineamientos de bienestar de la OMS segun la propuesta del proyecto.</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <section id="compra" class="purchase-section">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">Proceso de compra</p>
+                        <h2>Disenado para una compra rapida y clara</h2>
+                    </div>
+                </div>
+
+                <div class="steps-grid">
+                    <article>
+                        <strong>1</strong>
+                        <h3>Elige tu purificador</h3>
+                        <p>Compara cobertura, beneficios, categoria y precio base en dolares.</p>
+                    </article>
+                    <article>
+                        <strong>2</strong>
+                        <h3>Anade accesorios o mantenimiento</h3>
+                        <p>Incluye filtros, kits de limpieza, sensores y planes FreshCare desde la misma tienda.</p>
+                    </article>
+                    <article>
+                        <strong>3</strong>
+                        <h3>Calcula envio en Panama</h3>
+                        <p>Panama centro es gratis. Otras zonas muestran el extra correspondiente antes de pagar.</p>
+                    </article>
+                    <article>
+                        <strong>4</strong>
+                        <h3>Paga como prefieras</h3>
+                        <p>Checkout con tarjeta, Yappy Banco General o pago contra entrega cuando aplique.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="marketing-section">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">Marketing digital</p>
+                        <h2>Estrategia pensada para un negocio electronico viable</h2>
+                    </div>
+                </div>
+
+                <div class="marketing-grid">
+                    <article>
+                        <h3>Redes sociales</h3>
+                        <p>Contenido educativo sobre calidad del aire, alergias, mantenimiento y comparativas de producto.</p>
+                    </article>
+                    <article>
+                        <h3>Publicidad digital</h3>
+                        <p>Campanas segmentadas para familias, oficinas, conductores y clientes con necesidades respiratorias.</p>
+                    </article>
+                    <article>
+                        <h3>Contenido de confianza</h3>
+                        <p>Informacion clara sobre certificaciones, beneficios, ruido, cobertura y proceso de compra.</p>
+                    </article>
+                    <article>
+                        <h3>Programa de referidos</h3>
+                        <p>Descuentos para clientes satisfechos y recompensas por recomendacion boca a boca.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="contacto" class="contact-section">
+                <div>
+                    <p class="eyebrow">Canales de contacto</p>
+                    <h2>Hablemos de tu espacio y la solucion ideal</h2>
+                    <p>Asesoria personalizada para hogar, auto, oficina y compras corporativas en Panama.</p>
+                </div>
+                <div class="contact-card">
+                    <p><strong>Correo:</strong> hola@freshvita.pa</p>
+                    <p><strong>WhatsApp:</strong> +507 6500-2026</p>
+                    <p><strong>Instagram:</strong> @freshvita.pa</p>
+                    <p><strong>Horario:</strong> Lunes a sabado, 8:00 a.m. - 6:00 p.m.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <aside id="cart-panel" class="cart-panel hidden">
+        <div class="cart-header">
+            <div>
+                <p class="eyebrow">Tu pedido</p>
+                <h2>Carrito Fresh Vita</h2>
+            </div>
+            <button class="close-button" type="button" onclick="toggleCart(false)">x</button>
+        </div>
+
+        <div id="cart-empty" class="cart-empty">
+            <h3>Tu carrito esta vacio</h3>
+            <p>Agrega purificadores, accesorios o mantenimiento para continuar con la compra.</p>
+        </div>
+
+        <div id="cart-content" class="cart-content hidden">
+            <div id="cart-items" class="cart-items"></div>
+
+            <label class="zone-selector" for="zone">
+                <span>Zona de envio en Panama</span>
+                <select id="zone" onchange="updateCart()">
+                    <option value="0">Panama centro - Gratis</option>
+                    <option value="6">Area metropolitana extendida - $6</option>
+                    <option value="12">Panama Oeste y Colon - $12</option>
+                    <option value="18">Interior y provincias especiales - $18</option>
+                </select>
+            </label>
+
+            <div class="summary">
+                <div><span>Subtotal</span><strong id="subtotal">$0.00</strong></div>
+                <div><span>Envio</span><strong id="shipping">$0.00</strong></div>
+                <div class="summary-total"><span>Total</span><strong id="total">$0.00</strong></div>
+            </div>
+
+            <button class="checkout-button" type="button" onclick="openCheckout()">Continuar al pago</button>
+        </div>
+    </aside>
+
+    <div id="overlay" class="overlay hidden" onclick="closeOverlay()"></div>
+
+    <section id="checkout-modal" class="checkout-modal hidden">
+        <div class="checkout-card">
+            <div class="cart-header">
+                <div>
+                    <p class="eyebrow">Metodo de pago</p>
+                    <h2>Finaliza tu compra</h2>
+                </div>
+                <button class="close-button" type="button" onclick="closeCheckout()">x</button>
+            </div>
+
+            <div class="payment-options">
+                <button type="button" onclick="pay('Tarjeta')">Pagar con tarjeta</button>
+                <button type="button" onclick="pay('Yappy Banco General')">Pagar con Yappy</button>
+                <button type="button" onclick="pay('Contra entrega')">Pago contra entrega</button>
+            </div>
+
+            <p class="checkout-note">El total incluye el recargo de envio segun el lugar del pais donde se solicite el pedido. En Panama centro el envio es gratis.</p>
+        </div>
+    </section>
+
+    <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>
